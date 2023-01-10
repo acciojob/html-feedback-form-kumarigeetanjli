@@ -5,8 +5,27 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+	<h1>Feedback Form</h1>
+	<form method="post">
+		<label for="name">Name</label>
+		<input id="name" type="text" required minlength="3" maxlength="50" />
+		<br>
+		<label for='portfolio'>Portfolio</label>
+	<input type="url" required id="portfolio"/>
+	<br>
+	<label for="favColor">favColor</label>
+	<input id="favColor" type="color" />
+	
+	<br>
+	<div class="slidecontainer">
+		<label for="likeness">slider</label>
+		<input type="range" min="1" max="100" value="50" class="slider" id="likeness">
+	  </div>
+
+	</form>
+	
+	
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
